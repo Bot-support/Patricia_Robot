@@ -87,7 +87,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="😘𝙼𝚈 𝙱𝙵🥰", url="t.me/piroXpower"),
-        InlineKeyboardButton(
+    [
+       InlineKeyboardButton(text="𝚅𝙲 𝙿𝙻𝙰𝚈𝙴𝚁📀", url="https://telegra.ph/BLAZE-06-05-2"), 
+       InlineKeyboardButton(
             text="🔥𝚂𝚄𝙿𝙿𝙾𝚁𝚃🔥", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
