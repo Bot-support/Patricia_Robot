@@ -86,10 +86,8 @@ buttons = [
             text="🛰️𝙰𝙳𝙳 𝙿𝙰𝚃𝚁𝙸𝙲𝙸𝙰 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿🛰️", url="t.me/patricia_Robot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="😘𝙼𝚈 𝙱𝙵🥰", url="t.me/piroXpower"),
-    [
-       InlineKeyboardButton(text="𝚅𝙲 𝙿𝙻𝙰𝚈𝙴𝚁📀", url="https://telegra.ph/BLAZE-06-05-2"), 
-       InlineKeyboardButton(
+        InlineKeyboardButton(text="𝚅𝙲 𝙿𝙻𝙰𝚈𝙴𝚁📀", url="https://telegra.ph/BLAZE-06-05-2"),
+        InlineKeyboardButton(
             text="🔥𝚂𝚄𝙿𝙿𝙾𝚁𝚃🔥", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
