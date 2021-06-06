@@ -2,7 +2,7 @@
     <a href="https://github.com/Bot-support/Patricia_Robot/stargazers"><img src="https://img.shields.io/github/stars/Bot-support/Patricia_Robot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
 <p align="center">
-    <a href="https://app.codacy.com/manual/MdNoor786/ShasaBot-1/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
+    <a href="https://app.codacy.com/manual/Bot-support/Patricia_Robot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
     <a href="https://github.com/MdNoor786/ShasaBot-1"> <img src="https://img.shields.io/github/repo-size/MdNoor786/ShasaBot-1?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/MdNoor786/ShasaBot-1/commits/prince"> <img src="https://img.shields.io/github/last-commit/MdNoor786/ShasaBot-1?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/MdNoor786/ShasaBot-1/issues"> <img src="https://img.shields.io/github/issues/MdNoor786/ShasaBot-1?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
