@@ -23,7 +23,7 @@ The easiest way to deploy this Bot
  
 CREDITS
 ```
-[💞𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀💞](t.me/patricia_support)
+[𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀](t.me/patricia_support)
 
 
 
