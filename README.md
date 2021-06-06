@@ -15,7 +15,7 @@
 </p>
 
 # MissShasa_Gbot
-Me On Telegram [✨Miss Shasa✨](http://t.me/MissShasa_bot)
+Me On Telegram [💞𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀💞](http://t.me/patricia_Robot)
 
 ## How To Host
 The easiest way to deploy this Bot
