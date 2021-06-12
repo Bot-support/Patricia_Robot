@@ -68,7 +68,7 @@ async def lego(event):
 
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
 
-    fname2 = "LogoBySavage.png"
+    fname2 = "LogoByPatricia.png"
 
     img.save(fname2, "png")
 
@@ -142,7 +142,7 @@ async def lego(event):
 
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
 
-    fname2 = "LogoByShasa.png"
+    fname2 = "LogoByPatricia.png"
 
     img.save(fname2, "png")
 
