@@ -1,29 +1,35 @@
-<p align="center">
-    <a href="https://github.com/Bot-support/Patricia_Robot/stargazers"><img src="https://img.shields.io/github/stars/Bot-support/Patricia_Robot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
-</p>
-<p align="center">
-    <a href="https://app.codacy.com/manual/Bot-support/Patricia_Robot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/MdNoor786/ShasaBot-1"> <img src="https://img.shields.io/github/repo-size/MdNoor786/ShasaBot-1?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/MdNoor786/ShasaBot-1/commits/prince"> <img src="https://img.shields.io/github/last-commit/MdNoor786/ShasaBot-1?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/MdNoor786/ShasaBot-1/issues"> <img src="https://img.shields.io/github/issues/MdNoor786/ShasaBot-1?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/MdNoor786/ShasaBot-1/network/members"> <img src="https://img.shields.io/github/forks/MdNoor786/ShasaBot-1?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
-</p>
+<h1 align="centre"> 𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀 𝐑𝐎𝐁𝐎𝐓  </h1>
 
-<p align="center">
-  <img src="https://telegra.ph/file/977804a3688cded6ba673.jpg">
-</p>
 
-# MissShasa_Gbot
-Me On Telegram [💞𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀💞](http://t.me/patricia_robot)
+<p align="center"><a href="https://t.me/patricia_support"><img src="https://telegra.ph/file/de8e07908f887c55d6993.jpg" width="7000"></a></p> 
+<h4 align="center">A Powerful, Smart And Simple Management Bot to safeguard your group from spammers.</h4>
 
-## How To Host
-The easiest way to deploy this Bot
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Bot-support/Patricia_Robot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
- 
-CREDITS
+## OFFICIAL BOT
 
-[Patricia](https://t.me/patricia_support)
+AVAILABLE ON TELEGRAM WITH NAME [PATRICIA](https://t.me/patricia_Robot) 
+         
 
+
+## ⚔️ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🚑 ⚔️
+<a href="https://t.me/patricia_updates"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+
+<a href="https://t.me/patricia_support"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+
+### <b> JOIN SUPPORT GROUP FOR ANY QUERY AND HELP</b>
+
+
+
+
+
+### 🔥𝐃𝐄𝐏𝐋𝐎𝐘🔥 💻
+
+[![Deploy]( https://telegra.ph/file/fbee91847ade16a9ffe4d.png)](https://heroku.com/deploy?template=https://github.com/Bot-support/PATRICIA-ROBOT3.0)
+
+
+## 𝐂𝐑𝐄𝐃𝐈𝐓 💞
+
+<i><b> [BLAZE](https://t.me/piroXpower)</i></b>
+
+<i><b> [DAISY](https://github.com/TeamDaisyX/DaisyX)</i></b>
 
 
