@@ -86,7 +86,7 @@ buttons = [
             text="🛰️𝙰𝙳𝙳 𝙿𝙰𝚃𝚁𝙸𝙲𝙸𝙰 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿🛰️", url="t.me/patricia_Robot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="𝚅𝙲 𝙿𝙻𝙰𝚈𝙴𝚁📀", url="https://telegra.ph/BLAZE-06-05-2"),
+        InlineKeyboardButton(text="𝚅𝙲 𝙿𝙻𝙰𝚈𝙴𝚁📀", url="https://telegra.ph/𝙿𝙰𝚃𝚁𝙸𝙲𝙸𝙰𝚖𝚞𝚜𝚒𝚌-06-17-2"),
         InlineKeyboardButton(
             text="🔥𝚂𝚄𝙿𝙿𝙾𝚁𝚃🔥", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
@@ -99,7 +99,9 @@ buttons = [
 
 HELP_STRINGS = """
 `𝙷𝙸, 𝙸 𝙰𝙼` [PATRICIA💞]()
-`𝙸 𝙰𝙼 𝙷𝙴𝚁𝙴 𝚃𝙾 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙿𝙴𝚁𝙵𝙴𝙲𝚃𝙻𝚈..`"""
+`𝙸 𝙰𝙼 𝙷𝙴𝚁𝙴 𝚃𝙾 𝙼𝙰𝙽𝙰𝙶𝙴 𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙿𝙴𝚁𝙵𝙴𝙲𝚃𝙻𝚈`..
+`𝙸 𝙲𝙰𝙽 𝙰𝙻𝚂𝙾 𝙿𝙻𝙰𝚈 𝙼𝚄𝚂𝙸𝙲 𝙸𝙽 𝚅𝙲 𝙵𝙾𝚁 𝚈𝙾𝚄`
+`𝙼𝚈 𝙱𝙾𝚈𝙵𝚁𝙸𝙴𝙽𝙳 𝙽𝙰𝙼𝙴 𝙸𝚂 𝙱𝙻𝙰𝚉𝙴💕`"""
 
 
 shasa_IMG = "https://telegra.ph/file/98d680b99fa76452ccfb0.jpg"
