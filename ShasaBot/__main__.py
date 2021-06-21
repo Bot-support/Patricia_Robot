@@ -76,43 +76,34 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """                   
 𝐇𝐞𝐥𝐥𝐨 𝐭𝐡𝐞𝐫𝐞, 𝐈'𝐦[💞𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀💞](https://telegra.ph/file/98d680b99fa76452ccfb0.jpg)
-𝐈 𝐚𝐦 𝐚𝐧 𝐚𝐧𝐢𝐦𝐞 𝐓𝐡𝐞𝐦𝐞𝐝 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐁𝐨𝐭!
-𝐈 𝐰𝐢𝐥𝐥 𝐡𝐞𝐥𝐩 𝐢𝐧 𝐦𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩!
-𝐂𝐥𝐢𝐜𝐤`📗𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒📗`𝐛𝐮𝐭𝐭𝐨𝐧 
-𝐭𝐨 𝐜𝐡𝐞𝐜𝐤 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐬\n
+𝐈 𝐚𝐦 𝐚𝐧 𝐚𝐧𝐢𝐦𝐞 𝐓𝐡𝐞𝐦𝐞𝐝 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐁𝐨𝐭!𝐈 𝐰𝐢𝐥𝐥 𝐡𝐞𝐥𝐩 𝐢𝐧 𝐦𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩!
+𝐂𝐥𝐢𝐜𝐤📗𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒📗𝐛𝐮𝐭𝐭𝐨𝐧 𝐭𝐨 𝐜𝐡𝐞𝐜𝐤 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐬\n
 ✪ 𝐌𝐚𝐤𝐞 𝐬𝐮𝐫𝐞 𝐲𝐨𝐮 𝐣𝐨𝐢𝐧 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 ✪ \n
 𝐌𝐘 𝐁𝐅 :- [𝐁𝐋𝐀𝐙𝐄](t.me/piroXpower)
 """
 buttons = [
     [
         InlineKeyboardButton(
-            text="🛰️𝐒𝐔𝐌𝐌𝐎𝐍 𝐌𝐄 𝐓𝐎 𝐆𝐑𝐎𝐔𝐏🛰️", url="t.me/patricia_Robot?startgroup=true"),
+            text="🛰️𝙰𝙳𝙳 𝙿𝙰𝚃𝚁𝙸𝙲𝙸𝙰 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿🛰️", url="t.me/patricia_Robot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="🗞️𝐔𝐏𝐃𝐀𝐓𝐄🗞️", url="telegram.me/patricia_updates"),
+        InlineKeyboardButton(text="𝚅𝙲 𝙿𝙻𝙰𝚈𝙴𝚁📀", url="https://telegra.ph/BLAZE-06-05-2"),
         InlineKeyboardButton(
-            text="⚓𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚓", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="🔥𝚂𝚄𝙿𝙿𝙾𝚁𝚃🔥", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="🎧𝐌𝐔𝐒𝐈𝐂 𝐖𝐎𝐑𝐋𝐃🎧", url="https://telegram.me/frndsXworld"),
-        InlineKeyboardButton(
-            text="𝐕𝐂-𝐏𝐋𝐀𝐘𝐄𝐑", url="https://telegra.ph/BLAZE-06-05-2"
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="📚𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒📚", callback_data="help_back"),
+        InlineKeyboardButton(text="📗𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂📗", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-`𝐇𝐈,𝐈 𝐀𝐌` [𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀💞](https://telegra.ph/file/98d680b99fa76452ccfb0.jpg)
+`𝐇𝐈,𝐈 𝐀𝐌 [𝐏𝐀𝐓𝐑𝐈𝐂𝐈𝐀💞]
 -𝐈 𝐚𝐦 𝐡𝐞𝐫𝐞 𝐭𝐨 𝐦𝐚𝐧𝐚𝐠𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐩𝐞𝐫𝐟𝐞𝐜𝐭𝐥𝐲..
 -𝐈 𝐜𝐚𝐧 𝐚𝐥𝐬𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐕𝐂
--𝐘𝐨𝐮 𝐜𝐚𝐧 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐦𝐞  𝐛𝐲 
--𝐮𝐬𝐢𝐧𝐠 "!","/" 𝐬𝐲𝐦𝐛𝐨𝐥𝐬`
-`𝐌𝐲 𝐛𝐟 𝐢𝐬 𝐁𝐋𝐀𝐙𝐄💕`"""
+-𝐘𝐨𝐮 𝐜𝐚𝐧 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐦𝐞  𝐛𝐲 𝐮𝐬𝐢𝐧𝐠 "!","/" 𝐬𝐲𝐦𝐛𝐨𝐥𝐬..`
+"""
 
 
 shasa_IMG = "https://telegra.ph/file/98d680b99fa76452ccfb0.jpg"
@@ -205,7 +196,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="🔙𝐁𝐀𝐂𝐊", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
                     ),
                 )
 
