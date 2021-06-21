@@ -84,16 +84,22 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="🛰️𝙰𝙳𝙳 𝙿𝙰𝚃𝚁𝙸𝙲𝙸𝙰 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿🛰️", url="t.me/patricia_Robot?startgroup=true"),
+            text="🛰️𝐒𝐔𝐌𝐌𝐎𝐍 𝐌𝐄 𝐓𝐎 𝐆𝐑𝐎𝐔𝐏🛰️", url="t.me/patricia_Robot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="𝚅𝙲 𝙿𝙻𝙰𝚈𝙴𝚁📀", url="https://telegra.ph/BLAZE-06-05-2"),
+        InlineKeyboardButton(text="🗞️𝐔𝐏𝐃𝐀𝐓𝐄🗞️", url="https://t.me/patricia_updates"),
         InlineKeyboardButton(
-            text="🔥𝚂𝚄𝙿𝙿𝙾𝚁𝚃🔥", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="⚓𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚓", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="📗𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂📗", callback_data="help_back"),
+        InlineKeyboardButton(text="📚𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒📚", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(text="𝐕𝐂-𝐏𝐋𝐀𝐘𝐄𝐑📀", url="https://telegra.ph/BLAZE-06-05-2"),
+        InlineKeyboardButton(
+            text="🎧𝐌𝐔𝐒𝐈𝐂-𝐖𝐎𝐑𝐋𝐃🎧", url=f"https://t.me/frndsXworld"
+        ),
     ],
 ]
 
