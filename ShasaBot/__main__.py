@@ -95,7 +95,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🎧𝐌𝐔𝐒𝐈𝐂 𝐖𝐎𝐑𝐋𝐃🎧", callback_data="help_back"),
+        InlineKeyboardButton(text="🎧𝐌𝐔𝐒𝐈𝐂 𝐖𝐎𝐑𝐋𝐃🎧", url="https://telegram.me/frndsXworld"),
         InlineKeyboardButton(
             text="𝐕𝐂-𝐏𝐋𝐀𝐘𝐄𝐑", url="https://telegra.ph/BLAZE-06-05-2"
         ),
