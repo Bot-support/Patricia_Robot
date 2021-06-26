@@ -1,4 +1,3 @@
-__mod_name__ = "VC player"
 __help__ = """
           》** VCPLAYER ** 《
             
@@ -35,4 +34,6 @@ __help__ = """
 *Player cmd and all other cmds except /play, /current  and /playlist are only for admins with manage group
 
 PLEASE NOTE THIS SERVICE IS UNSTABLE AND CAN BE STOPPED ANYTIME."""
+
+__mod_name__ = "Ban/Mute"
 
