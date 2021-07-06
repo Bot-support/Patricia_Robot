@@ -5,9 +5,10 @@ import time
 import spamwatch
 
 import telegram.ext as tg
+from redis import StrictRedis
 from pyrogram import Client, errors
+from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from telethon import TelegramClient
-from telethon.sessions import StringSession
 
 StartTime = time.time()
 
@@ -69,7 +70,6 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
-    BOT_ID = int(os.environ.get("BOT_ID", None))
     DB_URI = os.environ.get("DATABASE_URL")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
@@ -78,6 +78,7 @@ if ENV:
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
     VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
+    BOT_ID = int(os.environ.get("BOT_ID", None))
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
@@ -93,7 +94,9 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    REDIS_URL = os.environ.get("REDIS_URL")
+    IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
+    IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
@@ -136,8 +139,6 @@ else:
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
-   
-
     EVENT_LOGS = Config.EVENT_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
@@ -152,8 +153,8 @@ else:
     HEROKU_APP_NAME = Config.HEROKU_APP_NAME
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
     OPENWEATHERMAP_ID = Config.OPENWEATHERMAP_ID
-    BOT_ID = Config.BOT_ID
     VIRUS_API_KEY = Config.VIRUS_API_KEY
+    BOT_ID = Config.BOT_ID
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
@@ -171,7 +172,9 @@ else:
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
     REDIS_URL = Config.REDIS_URL
-    STRING_SESSION = Config.STRING_SESSION
+    IBM_WATSON_CRED_URL = Config.IBM_WATSON_CRED_URL
+    IBM_WATSON_CRED_PASSWORD = Config.IBM_WATSON_CRED_PASSWORD
+
     
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
@@ -180,7 +183,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1837687523)
+DEV_USERS.add(1037581197)
 
 if not SPAMWATCH_API:
     sw = None
@@ -191,17 +194,23 @@ else:
     except:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
-
-ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+        
+REDIS = StrictRedis.from_url(REDIS_URL,decode_responses=True)
 try:
-    ubot.start()
+    REDIS.ping()
+    LOGGER.info("Your redis server is now alive!")
 except BaseException:
-    print("Userbot Error ! Have you added a STRING_SESSION in deploying??")
-    sys.exit(1)
+    raise Exception("Your redis server is not alive, please check again.")
+    
+finally:
+   REDIS.ping()
+   LOGGER.info("Your redis server is now alive!")        
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("shasa", API_ID, API_HASH)
-pbot = Client("shasapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("masha", API_ID, API_HASH)
+pbot = Client("mashapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+mongo_client = MongoClient(MONGO_DB_URI)
+db = mongo_client.ShasaBot
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -221,6 +230,3 @@ from ShasaBot.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
-
-
-
