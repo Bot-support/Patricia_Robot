@@ -1,5 +1,5 @@
 from ShasaBot import pbot
-from ShasaBot.utils.dbfunctions import (update_karma, get_karma, get_karmas,
+from ShasaBot.utils.dbfunc import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
 from ShasaBot.utils.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
