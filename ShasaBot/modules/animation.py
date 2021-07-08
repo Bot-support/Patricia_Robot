@@ -1,17 +1,18 @@
+
 import time
 from typing import List
 
 from telegram import Update
 from telegram.ext import run_async,CallbackContext
 
-from ShasaBot import dispatcher
-from ShasaBot.modules.disable import DisableAbleCommandHandler
-from ShasaBot.modules.helper_funcs.chat_status import user_admin
+from MashaRoBot import dispatcher
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.helper_funcs.chat_status import user_admin
 
 #sleep how many times after each edit in 'love' 
 EDIT_SLEEP = 1
 #edit how many times in 'love' 
-EDIT_TIMES = 14
+EDIT_TIMES = 10
 
 
 
@@ -31,15 +32,15 @@ EDIT_TIMES = 9
 #sleep how many times after each edit in 'hack' 
 EDIT_SLEEP = 1
 #edit how many times in 'hack' 
-EDIT_TIMES = 9
+EDIT_TIMES = 10
 
 
 
 
-#sleep how many times after each edit in 'policeanimation' 
+#sleep how many times after each edit in 'earthanimation' 
 EDIT_SLEEP = 1
-#edit how many times in 'policeanimation' 
-EDIT_TIMES = 11
+#edit how many times in 'earthanimation' 
+EDIT_TIMES = 18
 
 
 #sleep how many times after each edit in 'moonanimation' 
@@ -55,10 +56,10 @@ EDIT_SLEEP = 1
 EDIT_TIMES = 11
 
 
-#sleep how many times after each edit in 'brainanimation' 
+#sleep how many times after each edit in 'blockanimation' 
 EDIT_SLEEP = 1
-#edit how many times in 'brainanimation' 
-EDIT_TIMES = 14
+#edit how many times in 'blockanimation' 
+EDIT_TIMES = 18
 
 
 #sleep how many times after each edit in 'kill' 
@@ -86,67 +87,50 @@ kill_you = [
 ]
 
 
-brain_chain = [
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠         <(^_^ <)🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠       <(^_^ <)  🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠     <(^_^ <)    🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠   <(^_^ <)      🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠 <(^_^ <)        🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠<(^_^ <)         🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n(> ^_^)>🧠         🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n  (> ^_^)>🧠       🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n    (> ^_^)>🧠     🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n      (> ^_^)>🧠   🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n        (> ^_^)>🧠 🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n          (> ^_^)>🧠🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n           (> ^_^)>🗑",
-
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n           <(^_^ <)🗑",
-
+block_chain = [
+             "🟥",
+             "🟧",
+             "🟨",
+             "🟩",
+             "🟦",
+             "🟪",
+             "🟫",
+             "⬛",
+             "⬜",
+             "🟥",
+             "🟧",
+             "🟨",
+             "🟩",
+             "🟦",
+             "🟪",
+             "🟫",
+             "⬛",
+             "⬜"
 ]
 
+
+
 love_siren = [
-             "1 ❤️ love story",
-        "  😐             😕 \n/👕\         <👗\ \n 👖               /|",
-        "  😉          😳 \n/👕\       /👗\ \n  👖            /|",
-        "  😚            😒 \n/👕\         <👗> \n  👖             /|",
-        "  😍         ☺️ \n/👕\      /👗\ \n  👖          /|",
-        "  😍          😍 \n/👕\       /👗\ \n  👖           /|",
-        "  😘   😊 \n /👕\/👗\ \n   👖   /|",
-        " 😳  😁 \n /|\ /👙\ \n /     / |",
-        "😈    /😰\ \n<|\      👙 \n /🍆    / |",
-        "😅 \n/(),✊😮 \n /\         _/\\/|",
-        "😎 \n/\\_,__😫 \n  //    //       \\",
-        "😖 \n/\\_,💦_😋  \n  //         //        \\",
-        "  😭      ☺️ \n  /|\   /(👶)\ \n  /!\   / \ ",
-        "Abee aur kitna dekhoge be besharmi ki bhi hadd hoti hai..,The End 😂...",
+            "❤️❤️❤️🧡🧡🧡💚💚💚\n💙💙💙💜💜💜🖤🖤🖤",
+            "🖤🖤🖤💜💜💜💙💙💙\n❤️❤️❤️🧡🧡🧡💚💚💚",
+            "💛💛💛💙💙💙❤️❤️❤️\n💜💜💜❤️❤️❤️🧡🧡🧡",
+            "❤️❤️❤️🧡🧡🧡💚💚💚\n💙💙💙💜💜💜🖤🖤🖤",
+            "🖤🖤🖤💜💜💜💙💙💙\n❤️❤️❤️🧡🧡🧡💚💚💚",
+            "💛💛💛💙💙💙❤️❤️❤️\n💜💜💜❤️❤️❤️🧡🧡🧡",
+            "❤️❤️❤️🧡🧡🧡💚💚💚\n💙💙💙💜💜💜🖤🖤🖤",
+            "🖤🖤🖤💜💜💜💙💙💙\n❤️❤️❤️🧡🧡🧡💚💚💚",
+            "💛💛💛💙💙💙❤️❤️❤️\n💜💜💜❤️❤️❤️🧡🧡🧡"
 ]
 
 
 hack_you = [
-                "`Hacking... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)",
-                "`Hacking... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package",
-                "`Hacking... 8%\n██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)",
-                "`Hacking... 20%\n█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'",
-                "`Hacking... 36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e",
-                "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b",
-                "`Hacking... 84%\n█████████████████████▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b\n\n **Successfully Hacked Telegram Server Database**",
-                "`Hacking... 100%\n█████████HACKED███████████ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b\n\n **Successfully Hacked Telegram Server Database**\n\n\n🔹Output: Generating.....",
-                "`Targeted Account Hacked...\n\nPay 9965566$ To`Or Your GirlFriend Number To  My Master `To Remove this hack..`\n\nTERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b\n\n **Successfully Hacked this Account From Telegram Database**\n\n\n🔹**Output:** Successful",
-            ]
+            "Looking for WhatsApp databases in targeted person...",
+            " User online: True\nTelegram access: True\nRead Storage: True ",
+            "Hacking... 20.63%\n[███░░░░░░░░░░░░░░░░░]",    
+            "Hacking... 86.21%\n[███████████████░░░░░]",
+            "Hacking... 93.50%\n[█████████████████░░░]",
+            "hacking....  100%\n[████████████████████]",
+]
 
 
 
@@ -201,52 +185,37 @@ moon_ani = [
  ]
 
 
-
-clock_ani = [
-            "🕙",
-            "🕘",    
-            "🕗",
-            "🕖",
-            "🕕",
-            "🕔",
-            "🕓",
-            "🕒",
-            "🕑",
-            "🕐",
-            "🕛"
-
+earth_ani = [
+            "🌍",
+            "🌎",
+            "🌏",
+            "🌍",
+            "🌎",
+            "🌏",
+            "🌍",
+            "🌎",
+            "🌏",
+            "🌍",
+            "🌎",
+            "🌏",
+            "🌍",
+            "🌎",
+            "🌏",
+            "🌍",
+            "🌎",
+            "🌏"
 ]
-
-
-
-
-
-
-
-
-police_ani =  [
-        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
-        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
-        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
-        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
-        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
-        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵"]
 
 
 @user_admin
 @run_async
-def brainanimation(update: Update, context: CallbackContext):
+def blockanimation(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text('PROCESSING...') 
+    msg = update.effective_message.reply_text('⬜') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(brain_chain[x%14])
+        msg.edit_text(block_chain[x%18])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('YOU PUT BRAIN IN DUSTBIN')
+    msg.edit_text('🟥')
 
 
 
@@ -260,19 +229,20 @@ def clockanimation(update: Update, context: CallbackContext):
     for x in range(EDIT_TIMES):
         msg.edit_text(clock_ani[x%11])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('🕦')
+    msg.edit_text('🕚')
 
 
 
 @user_admin
 @run_async
-def policeanimation(update: Update, context: CallbackContext):
+def earthanimation(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text('CALL TIANA POLICE') 
+    msg = update.effective_message
+    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
     for x in range(EDIT_TIMES):
-        msg.edit_text(police_ani[x%11])
+        msg.edit_text(earth_ani[x%18])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('TIANA POLICE IS HERE')
+    msg.edit_text('🌍')
 
 
 
@@ -321,9 +291,9 @@ def hack(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     msg = update.effective_message.reply_text('Target selected') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(hack_you[x%9])
+        msg.edit_text(hack_you[x%5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('Successful hacked all data send on your DM ')
+    msg.edit_text('successful hacked all data send on my Database')
 
 
 
@@ -338,9 +308,9 @@ def love(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     msg = update.effective_message.reply_text('❣️') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(love_siren[x%14])
+        msg.edit_text(love_siren[x%5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('O MAA GO TURU LOB')
+    msg.edit_text('True Love💞')
 
 
 
@@ -356,30 +326,25 @@ def kill(update: Update, context: CallbackContext):
     msg.edit_text('⚰')
 
 __help__ = """
-- /love
-- /hack
-- /bombs
-- /kill 
-- /moon
-- /clock
-- /brain
-- /police
+- /love ❣️
+- /hack 👨‍💻
+- /bombs 💣
+- /kill 🔫
+- /police 🚔
 """
 KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs)
 MOONANIMATION_HANDLER =DisableAbleCommandHandler("moon",moonanimation)
-CLOCKANIMATION_HANDLER =DisableAbleCommandHandler("clock",clockanimation)
-BRAINANIMATION_HANDLER =DisableAbleCommandHandler("brain",brainanimation)
-POLICEANIMATION_HANDLER =DisableAbleCommandHandler("police",policeanimation)
+BLOCKANIMATION_HANDLER =DisableAbleCommandHandler("block",blockanimation)
+EARTHANIMATION_HANDLER =DisableAbleCommandHandler("earth",earthanimation)
 dispatcher.add_handler(KILL_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
 dispatcher.add_handler(BOMBS_HANDLER)
-dispatcher.add_handler(POLICEANIMATION_HANDLER)
+dispatcher.add_handler(EARTHANIMATION_HANDLER)
 dispatcher.add_handler(MOONANIMATION_HANDLER)
-dispatcher.add_handler(CLOCKANIMATION_HANDLER)
-dispatcher.add_handler(BRAINANIMATION_HANDLER)
+dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 
 __mod_name__ = "Magic"
